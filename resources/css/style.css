@@ -19,3 +19,74 @@ html {
     max-width: 1140px;
     margin: 0 auto;
 }
+
+
+/* sets the background image in the header and the viewport */
+header {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(img/laptop.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+
+/* aligns the text box on top of the image */
+.laptop-text-box {
+    position: absolute;
+    width: 1140px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+/* customize text in the text box */
+.laptop-text {
+    margin-top: 0px;
+    margin-bottom: 20px;
+    color: #fff;
+    font-size: 240%;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    word-spacing: 4px;
+}
+
+
+/* button styling */
+.btn:link, 
+.btn:visited {
+    display: inline-block;
+    padding: 10px 30px;
+    font-weight: 300;
+    text-decoration: none;
+    border-radius: 200px;
+    color: #fff;
+    transition: background-color 0.5s, border 0.5s, color 0.5s;
+}
+
+.btn-full:link,
+.btn-full:visited {
+    background-color: #16a085;
+    border: 1px solid #16a085;
+    margin-right: 15px;
+}
+
+.btn-ghost:link,
+.btn-ghost:visited {
+    border: 1px solid #16a085;
+}
+
+.btn:hover,
+.btn:active {
+    background-color: #0c5547;
+}
+
+.btn-full:hover,
+.btn-full:active {
+    border: 1px solid #0c5547;
+}
+
+.btn-ghost:hover,
+.btn-ghost:active {
+    border: 1px solid #0c5547;
+}
