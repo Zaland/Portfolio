@@ -28,6 +28,9 @@ html {
     margin: 0 auto;
 }
 
+section {
+    padding: 80px 0;
+}
 
 
 /* ----------------------------------------------------------------------- */
@@ -87,7 +90,7 @@ header {
 
 .header-text-box {
     position: absolute;
-    width: 1140px;
+    /* width: 1140px; */
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -104,13 +107,6 @@ header {
     letter-spacing: 1px;
     word-spacing: 4px;
 }
-
-/*.logo {
-    height: 100px;
-    width: auto;
-    float: left;
-    margin-top: 20px;
-}*/
 
 .main-nav {
     float: right;
@@ -137,4 +133,68 @@ header {
 .main-nav li a:hover,
 .main-nav li a:active {
     border-bottom: 2px solid #16a085;
+}
+
+
+/* ----------------------------------------------------------------------- */
+/* PROJECTS */
+/* ----------------------------------------------------------------------- */
+
+.section-projects {
+    padding: 0;
+    padding-top: 40px;
+}
+
+.projects-title {
+    text-align: center;
+}
+
+.projects-title:after {
+    display: block;
+    height: 2px;
+    background-color: #16a085;
+    content: " ";
+    width: 120px;
+    margin: 30px auto 0 auto;
+}
+
+.projects-showcase {
+    list-style: none;
+    width: 100%;
+    margin-top: 30px;
+}
+
+.projects-showcase li {
+    display: block;
+    float: left;
+    width: 50%;
+}
+
+.projects-photo {
+    width: 100%;
+    margin: 0;
+    overflow: hidden;
+    background-color: #000;
+}
+
+.project-photo img {
+    opacity: 1;
+    width: 100%;
+    height: auto;
+    transform: scale(1);
+    transition: transform 0.5s, opacity 0.5s;
+}
+
+.project-photo img:hover {
+    opacity: 0.5;
+    transform: scale(1.2);
+}
+
+.img-wrapper {
+    display: inline-block;
+    overflow: hidden;
+}
+
+.img-caption {
+    text-align: center;
 }
