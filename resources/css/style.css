@@ -43,49 +43,6 @@ section {
 }
 
 
-/* ----------------------------------------------------------------------- */
-/* BUTTONS */
-/* ----------------------------------------------------------------------- */
-
-.btn:link, 
-.btn:visited {
-    display: inline-block;
-    padding: 10px 30px;
-    font-weight: 300;
-    text-decoration: none;
-    border-radius: 200px;
-    color: #fff;
-    transition: background-color 0.5s, border 0.5s, color 0.5s;
-}
-
-.btn-full:link,
-.btn-full:visited {
-    background-color: #16a085;
-    border: 1px solid #16a085;
-    margin-right: 15px;
-}
-
-.btn-ghost:link,
-.btn-ghost:visited {
-    border: 1px solid #16a085;
-}
-
-.btn:hover,
-.btn:active {
-    background-color: #0c5547;
-}
-
-.btn-full:hover,
-.btn-full:active {
-    border: 1px solid #0c5547;
-}
-
-.btn-ghost:hover,
-.btn-ghost:active {
-    border: 1px solid #0c5547;
-}
-
-
 
 /* ----------------------------------------------------------------------- */
 /* HEADER */
@@ -96,6 +53,7 @@ header {
     background-size: cover;
     background-position: center;
     height: 100vh;
+    background-attachment: fixed;
 }
 
 .header-text-box {
@@ -156,7 +114,7 @@ header {
 }
 
 .projects-title {
-    text-align: center;
+    text-align: center; 
 }
 
 .projects-title:after {
@@ -166,18 +124,6 @@ header {
     content: " ";
     width: 120px;
     margin: 30px auto 0 auto;
-}
-
-.projects-showcase {
-    list-style: none;
-    width: 100%;
-    margin-top: 30px;
-}
-
-.projects-showcase li {
-    display: block;
-    float: left;
-    width: 50%;
 }
 
 .projects-photo {
