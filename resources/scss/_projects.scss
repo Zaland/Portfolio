@@ -1,0 +1,49 @@
+/* ----------------------------------------------------------------------- */
+/* PROJECTS */
+/* ----------------------------------------------------------------------- */
+
+.section-projects {
+    padding: 0;
+    padding-top: 40px;
+}
+
+.projects-title {
+    text-align: center; 
+    
+    &:after {
+		display: block;
+		height: 2px;
+		background-color: #16a085;
+		content: " ";
+		width: 120px;
+		margin: 30px auto 0 auto;
+	}
+}
+
+.project-photo img {
+	opacity: 1;
+	width: 100%;
+	height: auto;
+	-webkit-transform: scale(1);
+	transform: scale(1);
+	-webkit-transition: opacity 0.5s, -webkit-transform 0.5s;
+	transition: opacity 0.5s, -webkit-transform 0.5s;
+	transition: transform 0.5s, opacity 0.5s;
+	transition: transform 0.5s, opacity 0.5s, -webkit-transform 0.5s;
+	
+	&:hover {
+		opacity: 0.5;
+		-webkit-transform: scale(1.2);
+		transform: scale(1.2);
+	}
+}
+
+.img-wrapper {
+    display: inline-block;
+    overflow: hidden;
+}
+
+.img-caption {
+    text-align: center;
+    margin-bottom: 20px;
+}
